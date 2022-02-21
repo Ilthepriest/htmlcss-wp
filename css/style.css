@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#big-container{
+    margin: 50px auto;
+    width: 85%;
+}
+
+header{
+    background-color: yellow;
+    height: 150px;
+}
+
+nav{
+    background-color: blueviolet;
+    height: 50px;
+    margin: 20px 0;
+}
+
+
+.content-image{
+    background-color: pink;
+    height: 350px;
+    margin: 20px 0;
+}
+
+.title{
+    height: 125px;
+    background-color: lime;
+    margin: 20px auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.article-left, .article-right{
+    width: 24%;
+    height: 350px;
+    float: left;
+}
+
+.article-center{
+    width: 50%;
+    height: 350px;
+    float: left;
+    margin: 0 1% 1% 1%;
+}
+
+.bg-color{
+    background-color: orange;
+}
+
+footer{
+    background-color: lightskyblue;
+    height: 75px;
+}
