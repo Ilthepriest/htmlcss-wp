@@ -6,26 +6,76 @@
 
 #big-container{
     margin: 50px auto;
-    width: 85%;
+    width: 77%;
 }
 
 header{
-    background-color: yellow;
-    height: 150px;
+
+}
+
+#logo{
+    width: 184px;
+    height: 69px;
+    border-right: 1px solid lightgray;
+}
+
+ img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.scritteImmagine > div{
+    color: white;
+    font-size: 33px;
+}
+
+.scritteImmagine > p{
+    color: white;
+    font-size: 18px;
+}
+
+.scritteImmagine{
+    position: absolute;
+    bottom: 66px;
+    left: 53px;
 }
 
 nav{
-    background-color: blueviolet;
-    height: 50px;
     margin: 20px 0;
 }
+
+nav a{
+    font-size: 23px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+
+
 
 
 .content-image{
-    background-color: pink;
-    height: 350px;
+    height: 683px;
     margin: 20px 0;
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    position: relative; 
 }
+
+.content-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+  }
 
 .title{
     height: 125px;
